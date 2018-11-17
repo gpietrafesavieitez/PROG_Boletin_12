@@ -32,8 +32,7 @@ public class Garaxe {
         this.matricula = matricula;
     }
 
-    public boolean aparcar(String matricula){
-        this.matricula = matricula;
+    public boolean aparcar(){
         if(this.numeroCoches < 5){
             this.numeroCoches++;
             return true;
