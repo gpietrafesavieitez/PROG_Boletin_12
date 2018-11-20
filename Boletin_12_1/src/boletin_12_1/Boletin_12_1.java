@@ -26,7 +26,7 @@ public class Boletin_12_1{
                 }
                 do{ // Input precioPagado + validacion
                     try{
-                        precioPagado = Double.parseDouble(JOptionPane.showInputDialog(null,"Prezo estacionamento: " + String.format("%.2f",precioTarifa) + "€","Garaxe",3));
+                        precioPagado = Double.parseDouble(JOptionPane.showInputDialog(null,"Prezo estacionamento: " + String.format("%.2f",precioTarifa) + " €","Garaxe",3));
                         esc = true;
                     }catch(NumberFormatException e){
                     }
@@ -37,10 +37,10 @@ public class Boletin_12_1{
                 }while(esc != true); // Si todo fue correcto imprimimos factura
                 JOptionPane.showMessageDialog(null,"FACTURA:\n\n"
                                 + "- MATRICULA COCHE: " + garaxe.getMatricula() + "\n"
-                                        + "- TEMPO: " + tiempo + " hora(s)\n"
-                                                + "- PREZO: " + String.format("%.2f",precioTarifa) + "€\n"
-                                                        + "- CARTOS RECIBIDOS: " + String.format("%.2f",precioPagado) + "€\n"
-                                                                + "- CARTOS DEVOLTOS: " + String.format("%.2f",(precioPagado - precioTarifa)) + "€\n\n"
+                                        + "- TEMPO: " + tiempo + " hora (s)\n"
+                                                + "- PREZO: " + String.format("%.2f",precioTarifa) + " €\n"
+                                                        + "- CARTOS RECIBIDOS: " + String.format("%.2f",precioPagado) + " €\n"
+                                                                + "- CARTOS DEVOLTOS: " + String.format("%.2f",(precioPagado - precioTarifa)) + " €\n\n"
                                                                         + "GRAZAS POR USAR O NOSO APARCADOIRO","Garaxe",1);
             }else{ // Si no hay sitio
                 JOptionPane.showMessageDialog(null,"COMPLETO","Garaxe",2);
